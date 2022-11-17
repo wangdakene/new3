@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>青年志愿者协会</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#outlineborder {
+				width: 80%;
+				height: 2000px;
+				margin: auto;
+				display: flex;
+				flex-direction: column;
+				background-image: url('amg渐变上标.jpg');
+			}
+
+			nav {
+				width: 100%;
+				height: 100px;
+				background-image: url('daohang2.jpg');
+				background-repeat: no-repeat;
+				background-color: red;
+			}
+
+			header {
+				width: 100%;
+				flex: 2;
+				display: flex;
+			}
+
+			#slideshow {
+				width: 100%;
+				height: 100%;
+				flex: 2;
+				background-color: honeydew;
+				position: relative;
+			}
+
+			#qq img {
+				width: 140px;
+				height: 140px;
+				top: 74px;
+				right: 350px;
+				position: absolute;
+			}
+
+			#qq {
+				display: none;
+			}
+
+			.qqewm:hover #qq {
+				display: block;
+			}
+
+			#photograph img {
+				width: 140px;
+				height: 140px;
+				top: 74px;
+				float: right;
+				position: absolute;
+			}
+
+			#photograph {
+				display: none;
+			}
+
+			.ewm:hover #photograph {
+				display: block;
+			}
+
+			#slideshow:hover span {
+				display: block;
+			}
+
+			#slideshow img {
+				width: 100%;
+				height: 100%;
+				display: none;
+			}
+
+			#slideshow .on {
+				display: block;
+			}
+
+			#slideshow span {
+				position: absolute;
+				color: white;
+				display: block;
+				width: 40px;
+				height: 40px;
+				background-color: grey;
+				line-height: 40px;
+				text-align: center;
+				margin-left: 30px;
+				margin-top: 210px;
+				opacity: 0.4;
+				display: none;
+				border-radius: 150px
+			}
+
+			#slideshow span:hover {
+				opacity: 0.8;
+			}
+
+			#information {
+				width: 100%;
+				background-color: bisque;
+				flex: 6
+			}
+
+			footer {
+				width: 100%;
+				background-color: gray;
+				flex: 0.3
+			}
+
+			nav ul {
+				float: right;
+				display: flex;
+				-webkit-justify-content: space-around;
+				justify-content: space-around;
+				/* 弹性盒子文字版 */
+				width: 70%;
+			}
+
+			nav li {
+				list-style: none;
+				line-height: 100px;
+
+			}
+
+			nav li a {
+				text-decoration: none;
+				color: aliceblue;
+				font-size: 20px;
+				padding: 10px;
+			}
+
+			nav img {
+				float: left;
+			}
+
+			footer p {
+				font-size: 15px;
+				color: white;
+			}
+
+			#video {
+				flex: 1.5;
+				background-image: url('true.jpg');
+			}
+
+			header video {
+				position: relative;
+				top: 120PX;
+				width: 100%;
+			}
+
+			#friendship {
+				;
+				position: relative;
+				top: 20px
+			}
+
+			#relation {
+				position: relative;
+				top: -40px
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outlineborder">
+			<!-- 外框 -->
+			<nav>
+				<ul>
+					<li><a href="javascript:location.reload();">首页</a></li>
+					<li><a href="#">社团之声</a></li>
+					<li><a href="http://127.0.0.1:8848/%E6%96%B0%E4%B8%96%E7%95%8C/css/function.html">协会职能</a></li>
+					<li><a href="#">未来走向</a></li>
+					<li><a href="#" class="qqewm">协会说说
+							<div id="qq">
+								<img src="yizhi.jpg">
+							</div>
+						</a></li>
+					<li><a href="#" class="ewm">校青协时光机
+							<div id="photograph">
+								<img src="qingxie.jpg" alt="">
+							</div>
+						</a></li>
+				</ul>
+			</nav><!-- 导航栏 -->
+			<header>
+				<div id="slideshow">
+					<!-- 轮播图 -->
+					<span>&lt;</span>
+					<span style="right: 30px;">&gt;</span>
+					<img src="tu1.jpg" class="on" alt="">
+					<img src="tu2.jpg" alt="">
+					<img src="tu3.jpg" alt="">
+					<img src="tu4.jpg" alt="">
+				</div>
+				<div id="video">
+					<!-- 视频 -->
+					<video src="biddingdocument.mp4" controls></video>
+
+				</div>
+			</header>
+			<div style="width: 100%;height: 10px;"></div>
+			<div id="information">
+				<!-- 资讯 -->
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<footer>
+				<div id="friendship">
+					<p style="color: black;"><b>友情链接</b></p>
+					<a href="https://www.ycvc.jx.cn/">宜春职业技术学院</a>
+					<a href="https://www.gqt.org.cn/">中国共青团网</a>
+					<a href="https://www.youth.cn/">中国青年网</a>
+				</div>
+				<p style="text-align: center;position: relative;top:20px;">
+					<b style="color: black;">版权所属</b><br>宜春职业技术学院<br>青年志愿者协会
+				</p>
+				<div id="relation">
+					<p style="color: black;"><b>联系我们</b></p>
+					<p>会长王杉&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp19370454944
+						<br>副会程艳飞&nbsp&nbsp&nbsp&nbsp13077985903
+						<br>副会刘惺琪&nbsp&nbsp&nbsp&nbsp13970552751
+					</p>
+				</div>
+			</footer><!-- 联系区 -->
+			<audio src="Volunteeryouth.flac" autoplay="autoplay"></audio>
+			<!-- 志愿青年音乐 -->
+		</div>
+		<script type="text/javascript">
+			var img = document.querySelectorAll('#slideshow img'),
+				btn = document.querySelectorAll('#slideshow span'),
+				index = 0,
+				len = img.length,
+				timer
+			box = document.getElementById('slideshow')
+			btn[0].onclick = function() {
+				img[index].className = ''
+				index--
+				if (index < 0) {
+					index = 3
+				}
+				img[index].className = 'on'
+			}
+			btn[1].onclick = function() {
+				img[index].className = ''
+				index++
+				if (index == len) {
+					index = 0
+				}
+				img[index].className = 'on'
+			}
+
+			function play() {
+				timer = setInterval(function() {
+					btn[1].onclick()
+				}, 4000)
+			}
+
+			function stop() {
+				clearInterval(timer)
+			}
+			box.onmouseover = stop
+			box.onmouseout = play
+			play()
+		</script>
+	</body>
+</html>
